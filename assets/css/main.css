@@ -12846,9 +12846,16 @@ p.sticky-label {
 
 .wrapper {
   position: relative;
-  width: 1200px;
+  /* width: 1200px; */
   height: 520px;
   margin: auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
 /* LEFT CIRCLE */
@@ -13074,4 +13081,134 @@ p.sticky-label {
   .faq-img-content {
     width: 100%;
   }
+}
+
+
+
+
+
+/* ================================
+   WHY SECTION (DESKTOP - ORIGINAL)
+================================ */
+.why-dg-scb {
+  position: relative;
+}
+
+.why-dg-scb .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.left-circle,
+.center-text,
+.right-content {
+  flex: 1;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.right-content {
+  max-width: 400px;
+}
+
+
+/* ================================
+   SIMPLE VERSION (HIDDEN BY DEFAULT)
+================================ */
+.why-simple {
+  display: none;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+
+/* ================================
+   SIMPLE SECTION STYLING
+================================ */
+.why-simple h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.why-simple .item {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.why-simple .item:last-child {
+  border-bottom: none;
+}
+
+.why-simple .item:hover {
+  background: #f9f9f9;
+}
+
+.why-simple h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.why-simple p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/* ================================
+   RESPONSIVE BREAKPOINT (MAIN LOGIC)
+================================ */
+@media (max-width: 1398px) {
+
+  /* Hide complex design */
+  .why-dg-scb {
+    display: none;
+  }
+
+  /* Show simple version */
+  .why-simple {
+    display: block;
+  }
+}
+
+
+/* ================================
+   SMALL DEVICES (TABLET & MOBILE)
+================================ */
+@media (max-width: 768px) {
+
+  .why-simple {
+    padding: 30px 15px;
+  }
+
+  .why-simple h2 {
+    font-size: 20px;
+  }
+
+  .why-simple h4 {
+    font-size: 15px;
+  }
+
+  .why-simple p {
+    font-size: 13px;
+  }
+}
+
+.dg-why-us-items{
+  background: #f9f0ea;
+  margin-bottom: 20px;
+}
+
+.dg-why-us-items h4{
+  color: #540400;
 }
